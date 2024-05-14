@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1189.6" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maruthielectricals.ManageProducts">
+    <children>
+        <Label layoutX="41.0" prefHeight="92.0" prefWidth="311.0" text="PRODUCTS" textFill="#b20e0e">
+            <font>
+                <Font name="Dubai Medium" size="52.0" />
+            </font>
+        </Label>
+        <Line endX="144.5999755859375" endY="7.62939453125E-6" layoutX="145.0" layoutY="76.0" startX="-100.0" stroke="#711818" strokeWidth="5.0" />
+        <TableView fx:id="prodTable" layoutX="24.0" layoutY="120.0" onMouseClicked="#getSelected" prefHeight="660.0" prefWidth="899.0">
+            <columns>
+                <TableColumn fx:id="pid" prefWidth="81.59997254610062" text="Product_ID" />
+            <TableColumn fx:id="pcategory" prefWidth="133.5999984741211" text="Category" />
+                <TableColumn fx:id="pproname" prefWidth="183.19998168945312" text="Product Name" />
+                <TableColumn fx:id="pquantity" prefWidth="104.00009155273438" text="Quantity" />
+                <TableColumn fx:id="pprice" prefWidth="118.39996337890625" text="Price" />
+                <TableColumn fx:id="pdescription" prefWidth="278.39995117187505" text="Description" />
+            </columns>
+        </TableView>
+        <TextField fx:id="pindex" disable="true" layoutX="964.0" layoutY="134.0" prefHeight="33.0" prefWidth="190.0" promptText="Index" />
+        <TextField fx:id="pcat" disable="true" layoutX="964.0" layoutY="183.0" prefHeight="33.0" prefWidth="190.0" promptText="Category" />
+        <TextField fx:id="pname" disable="true" layoutX="964.0" layoutY="233.0" prefHeight="33.0" prefWidth="190.0" promptText="Product Name" />
+        <TextField fx:id="pqty" disable="true" layoutX="964.0" layoutY="283.0" prefHeight="33.0" prefWidth="190.0" promptText="Quantity" />
+        <TextArea fx:id="pdes" disable="true" layoutX="965.0" layoutY="380.0" prefHeight="79.0" prefWidth="190.0" promptText="Description" />
+        <CheckBox fx:id="up" layoutX="964.0" layoutY="470.0" onAction="#visible" />
+        <Button fx:id="clear" layoutX="1020.0" layoutY="466.0" mnemonicParsing="false" onAction="#clearData" text="Clear" />
+        <Button fx:id="add" layoutX="962.0" layoutY="529.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="46.0" prefWidth="189.0" style="-fx-background-color: green;" text="ADD">
+            <font>
+                <Font name="Comic Sans MS Bold Italic" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="update" layoutX="962.0" layoutY="594.0" mnemonicParsing="false" onAction="#updateProduct" prefHeight="46.0" prefWidth="189.0" style="-fx-background-color: gold;" text="UPDATE">
+            <font>
+                <Font name="Comic Sans MS Bold Italic" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="delete" layoutX="962.0" layoutY="658.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="46.0" prefWidth="189.0" style="-fx-background-color: red;" text="DELETE">
+            <font>
+                <Font name="Comic Sans MS Bold Italic" size="18.0" />
+            </font>
+        </Button>
+        <TextField fx:id="filter" layoutX="696.0" layoutY="38.0" onAction="#searchProduct" prefHeight="34.0" prefWidth="190.0" promptText="Search" />
+      <TextField fx:id="pp" disable="true" layoutX="964.0" layoutY="332.0" prefHeight="33.0" prefWidth="190.0" promptText="Price" />
+      <Button fx:id="print" layoutX="962.0" layoutY="724.0" mnemonicParsing="false" onAction="#generateProducts" prefHeight="46.0" prefWidth="189.0" style="-fx-background-color: aqua;" text="PRINT">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

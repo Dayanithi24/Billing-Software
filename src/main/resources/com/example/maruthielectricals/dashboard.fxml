@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboard" prefHeight="800.0" prefWidth="1190.0" style="-fx-background-color: #81ffb5;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maruthielectricals.Dashboard">
+        <children>
+      <Rectangle arcHeight="100.0" arcWidth="100.0" fill="WHITE" height="503.0" layoutX="43.0" layoutY="272.0" opacity="0.28" stroke="WHITE" strokeType="INSIDE" width="528.0" />
+      <Rectangle arcHeight="100.0" arcWidth="100.0" fill="WHITE" height="244.0" layoutX="680.0" layoutY="518.0" opacity="0.28" stroke="WHITE" strokeType="INSIDE" width="453.0" />
+      <Rectangle arcHeight="100.0" arcWidth="100.0" fill="WHITE" height="244.0" layoutX="680.0" layoutY="259.0" opacity="0.28" stroke="WHITE" strokeType="INSIDE" width="453.0" />
+            <Rectangle arcHeight="100.0" arcWidth="100.0" fill="WHITE" height="200.0" layoutX="85.0" layoutY="35.0" opacity="0.28" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="1019.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="128.0" layoutX="169.0" layoutY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-opacity: 0.7; -fx-arc-height: 30; -fx-arc-width: 30;" width="231.0">
+                <fill>
+                    <LinearGradient endX="1.0" endY="1.0">
+                        <stops>
+                            <Stop>
+                                <color>
+                                    <Color green="1.0" blue="0.5" />
+                                </color>
+                            </Stop>
+                            <Stop offset="0.06460296096904437">
+                                <color>
+                                    <Color green="1.0" blue="0.5" />
+                                </color>
+                            </Stop>
+                            <Stop offset="0.49798115746971716">
+                                <color>
+                                    <Color red="0.4983077943325043" green="1.0" />
+                                </color>
+                            </Stop>
+                            <Stop offset="0.9111709286675636">
+                                <color>
+                                    <Color green="1.0" blue="0.4333333373069763" />
+                                </color>
+                            </Stop>
+                            <Stop offset="1.0">
+                                <color>
+                                    <Color green="1.0" blue="0.4333333373069763" />
+                                </color>
+                            </Stop>
+                        </stops>
+                    </LinearGradient>
+                </fill>
+            </Rectangle>
+            <Label layoutX="179.0" layoutY="74.0" prefHeight="30.0" prefWidth="210.0" text="Number of Customers">
+                <font>
+                    <Font name="Comic Sans MS Bold" size="19.0" />
+                </font>
+            </Label>
+            <Label fx:id="noc" alignment="CENTER" layoutX="245.0" layoutY="104.0">
+                <font>
+                    <Font name="Comic Sans MS" size="64.0" />
+                </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="128.0" layoutX="470.0" layoutY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-opacity: 0.7; -fx-arc-height: 30; -fx-arc-width: 30;" width="231.0">
+                <fill>
+                    <LinearGradient endX="1.0" endY="1.0">
+                        <stops>
+                            <Stop>
+                                <color>
+                                    <Color green="1.0" blue="0.5" />
+                                </color>
+                            </Stop>
+                            <Stop offset="0.06460296096904437">
+                                <color>
+                                    <Color green="1.0" blue="0.5" />
+                                </color>
+                            </Stop>
+                            <Stop offset="0.49798115746971716">
+                                <color>
+                                    <Color red="0.4983077943325043" green="1.0" />
+                                </color>
+                            </Stop>
+                            <Stop offset="0.9111709286675636">
+                                <color>
+                                    <Color green="1.0" blue="0.4333333373069763" />
+                                </color>
+                            </Stop>
+                            <Stop offset="1.0">
+                                <color>
+                                    <Color green="1.0" blue="0.4333333373069763" />
+                                </color>
+                            </Stop>
+                        </stops>
+                    </LinearGradient>
+                </fill>
+            </Rectangle>
+            <Label layoutX="490.0" layoutY="74.0" prefHeight="30.0" prefWidth="192.0" text="Number of Products">
+                <font>
+                    <Font name="Comic Sans MS Bold" size="19.0" />
+                </font>
+            </Label>
+            <Label fx:id="nop" alignment="CENTER" layoutX="546.0" layoutY="104.0">
+                <font>
+                    <Font name="Comic Sans MS" size="64.0" />
+                </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="128.0" layoutX="768.0" layoutY="71.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-opacity: 0.7; -fx-arc-height: 30; -fx-arc-width: 30;" width="231.0">
+                <fill>
+                    <LinearGradient endX="1.0" endY="1.0">
+                        <stops>
+                            <Stop>
+                                <color>
+                                    <Color green="1.0" blue="0.5" />
+                                </color>
+                            </Stop>
+                            <Stop offset="0.06460296096904437">
+                                <color>
+                                    <Color green="1.0" blue="0.5" />
+                                </color>
+                            </Stop>
+                            <Stop offset="0.49798115746971716">
+                                <color>
+                                    <Color red="0.4983077943325043" green="1.0" />
+                                </color>
+                            </Stop>
+                            <Stop offset="0.9111709286675636">
+                                <color>
+                                    <Color green="1.0" blue="0.4333333373069763" />
+                                </color>
+                            </Stop>
+                            <Stop offset="1.0">
+                                <color>
+                                    <Color green="1.0" blue="0.4333333373069763" />
+                                </color>
+                            </Stop>
+                        </stops>
+                    </LinearGradient>
+                </fill>
+            </Rectangle>
+            <Label layoutX="786.0" layoutY="74.0" prefHeight="30.0" prefWidth="194.0" text="Number of Invoices">
+                <font>
+                    <Font name="Comic Sans MS Bold" size="19.0" />
+                </font>
+            </Label>
+            <Label fx:id="noi" alignment="CENTER" layoutX="844.0" layoutY="104.0">
+                <font>
+                    <Font name="Comic Sans MS" size="64.0" />
+                </font>
+            </Label>
+      <LineChart fx:id="linechart" layoutX="42.0" layoutY="361.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label layoutX="148.0" layoutY="294.0" text="Past 7 days Sales" textFill="#570d6b">
+         <font>
+            <Font name="Berlin Sans FB" size="46.0" />
+         </font>
+      </Label>
+      <ListView fx:id="ostock" layoutX="899.0" layoutY="278.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="708.0" layoutY="354.0" text="Out Of Stock" textFill="#f70000">
+         <font>
+            <Font name="Gill Sans MT" size="28.0" />
+         </font>
+         <effect>
+            <Glow level="0.58" />
+         </effect>
+      </Label>
+      <ListView fx:id="istock" layoutX="899.0" layoutY="540.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="701.0" layoutY="623.0" text="Inadequate Stock" textFill="#39187b">
+         <font>
+            <Font name="Gill Sans MT" size="28.0" />
+         </font>
+         <effect>
+            <Glow level="0.58" />
+         </effect>
+      </Label>
+        </children>
+</AnchorPane>

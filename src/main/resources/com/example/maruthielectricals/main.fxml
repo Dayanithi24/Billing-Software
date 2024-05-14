@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1540.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.maruthielectricals.Main">
+   <left>
+      <AnchorPane prefHeight="800.0" prefWidth="350.0" style="-fx-background-color: #eafd2d;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="130.0" fitWidth="127.0" layoutX="96.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ME_logo2.png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="25.0" layoutY="341.0" prefHeight="261.0" prefWidth="300.0" spacing="10.0">
+               <children>
+                  <MenuButton alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" popupSide="LEFT" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Invoice">
+                     <items>
+                        <MenuItem fx:id="newInvoice" mnemonicParsing="false" onAction="#handler2" text="New Invoice" />
+                        <MenuItem fx:id="manage" mnemonicParsing="false" onAction="#handler3" text="Manage Invoice" />
+                     </items>
+                     <font>
+                        <Font name="Gill Sans MT Bold Italic" size="21.0" />
+                     </font>
+                  </MenuButton>
+                  <Button fx:id="dashboard" mnemonicParsing="false" onAction="#handler1" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Dashboard">
+                     <font>
+                        <Font name="Gill Sans MT Bold Italic" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="product" mnemonicParsing="false" onAction="#manageProduct" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Products">
+                     <font>
+                        <Font name="Gill Sans MT Bold Italic" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="customer" mnemonicParsing="false" onAction="#manageCustomer" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: transparent;" text="Customers">
+                     <font>
+                        <Font name="Gill Sans MT Bold Italic" size="21.0" />
+                     </font>
+                  </Button>
+
+               </children>
+            </VBox>
+            <Button fx:id="logout" layoutX="96.0" layoutY="708.0" mnemonicParsing="false" text="LOG OUT">
+               <graphic>
+                  <ImageView fitHeight="88.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Microsoft Sans Serif" size="19.0" />
+               </font>
+            </Button>
+            <Label layoutY="143.0" prefHeight="166.0" prefWidth="350.0" text="MARUTHI ELECTRICALS" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="40.0" />
+               </font>
+               <effect>
+                  <DropShadow height="39.77" offsetX="8.0" offsetY="8.0" radius="28.7425" width="77.2">
+                     <color>
+                        <Color red="0.17894737422466278" green="0.17894737422466278" blue="0.17894737422466278" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <textFill>
+                  <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.3901515765623613" startX="1.0" startY="0.8750000018062013">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.45490196347236633" green="0.0784313753247261" blue="0.6745098233222961" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="0.45490196347236633" green="0.0784313753247261" blue="0.6745098233222961" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.3365853658536585">
+                           <color>
+                              <Color red="0.30000001192092896" green="0.2772499918937683" blue="0.10499999672174454" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5748645898302855">
+                           <color>
+                              <Color red="0.3052631616592407" green="0.2853645086288452" blue="0.10627680271863937" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.45490196347236633" green="0.0784313753247261" blue="0.6745098233222961" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
